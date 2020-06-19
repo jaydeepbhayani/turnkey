@@ -1,5 +1,12 @@
 <resources>
     <string name="app_name">Turnkey</string>
     <string name="info_try_after_some_time">Coming Soon!</string>
+    <string name="menu_modular_kitchen">Modular kitchens</string>
+    <string name="menu_wardrobes">Wardrobes</string>
+    <string name="menu_sofas">Sofas</string>
+    <string name="menu_dining_tables">Dining Tables</string>
+    <string name="menu_curtains">Curtains</string>
+    <string name="menu_lights">Lights</string>
+    <string name="menu_alluminium_windows">Alluminium Windows</string>
 
 </resources>
