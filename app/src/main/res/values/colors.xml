@@ -6,6 +6,7 @@
 
     <color name="transparant">#ad131313</color>
     <color name="photo_tint">#7f101010</color>
+    <color name="photo_tint_white">#7FDFDEDE</color>
 
     <color name="colorTab">@color/colorWhite</color>
     <color name="colorTabBackground">@color/colorWhite</color>

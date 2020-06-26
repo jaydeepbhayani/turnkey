@@ -29,7 +29,7 @@ class SplashActivity : BaseActivity() {
 
         setContentView(R.layout.activity_splash)
 
-        //startAnimation()
+        startAnimation()
         /*slideDownAnimation = AnimationUtils.loadAnimation(
             applicationContext,
             R.anim.slide_down
@@ -37,10 +37,10 @@ class SplashActivity : BaseActivity() {
         slideLeftToRight = AnimationUtils.loadAnimation(applicationContext, R.anim.slide_left_right)
         iv_icon.startAnimation(slideDownAnimation)
         iv_name.startAnimation(slideLeftToRight)*/
-        Handler().postDelayed({
+        /*Handler().postDelayed({
             startActivity(Intent(this, MainActivity::class.java))
             finish()
-        }, 1000)
+        }, 1000)*/
     }
 
     private fun startAnimation() {

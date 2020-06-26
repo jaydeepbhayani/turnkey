@@ -23,4 +23,18 @@
     <string name="most_popular_brands">Most popular brands</string>
     <string name="rupee">\u20B9</string>
     <string name="rs">\u20A8</string>
+    <string name="menu_home">Home</string>
+    <string name="title_photos">Departments</string>
+    <string name="menu_departments">Departments</string>
+    <string name="menu_wish_list">Wishlist</string>
+    <string name="menu_profile">Profile</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="menu_our_blogs">Our Blogs</string>
+    <string name="menu_need_help">Need Help?</string>
+    <string name="menu_shop_by_department">SHOP BY DEPARTMENT</string>
+    <string name="menu_about_us">About Us</string>
+    <string name="menu_cart">Cart</string>
+
 </resources>
