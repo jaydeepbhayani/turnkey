@@ -2,10 +2,7 @@ package anetos.software.turnkey.data.api.remote
 
 import android.content.Context
 import android.util.Log
-import anetos.software.turnkey.data.UrlConstants.DASHBOARD_URL
-import anetos.software.turnkey.data.UrlConstants.GET_ALL_REGISTER_DATA
 import anetos.software.turnkey.data.UrlConstants.LOGIN_URL
-import anetos.software.turnkey.data.UrlConstants.MARKETPLACE_URL
 import anetos.software.turnkey.data.UrlConstants.OTP_URL
 import anetos.software.turnkey.data.UrlConstants.REGISTER_URL
 import anetos.software.turnkey.data.UrlConstants.SEARCHDATA_URL
@@ -119,7 +116,7 @@ class RemoteDataSourceImpl private constructor(
         withContext(Dispatchers.IO) {
             val request =
                 apiService.getRegisterInfoDataAsync(
-                    GET_ALL_REGISTER_DATA
+                    LOGIN_URL
                 )
             try {
                 val response = request.await()
@@ -141,7 +138,7 @@ class RemoteDataSourceImpl private constructor(
         withContext(Dispatchers.IO) {
             val request =
                 apiService.getDashboardDataAsync(
-                    DASHBOARD_URL
+                    LOGIN_URL
                 )
             try {
                 val response = request.await()
@@ -185,7 +182,7 @@ class RemoteDataSourceImpl private constructor(
         withContext(Dispatchers.IO) {
             val request =
                 apiService.getMarketplaceDataAsync(
-                    MARKETPLACE_URL
+                    LOGIN_URL
                 )
             try {
                 val response = request.await()

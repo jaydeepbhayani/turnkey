@@ -14,9 +14,10 @@ import anetos.software.turnkey.R
  *
  *  Created by Jaydeep Bhayani on 19/04/2020
  */
-class DashboardLegendView(context: Context, attrs: AttributeSet)  : ConstraintLayout(context, attrs) {
+class DashboardLegendView(context: Context, attrs: AttributeSet) :
+    ConstraintLayout(context, attrs) {
 
-    /*init {
+    init {
         inflate(context, R.layout.view_dashboard_legend, this)
 
         val dashboardLegendIcon: ImageView = findViewById(R.id.icon)
@@ -25,7 +26,10 @@ class DashboardLegendView(context: Context, attrs: AttributeSet)  : ConstraintLa
 
         val attributes = context.obtainStyledAttributes(attrs, R.styleable.DashboardLegendView)
         val drawableResId =
-            attributes.getResourceId(R.styleable.DashboardLegendView_icon, R.drawable.icon_directory)
+            attributes.getResourceId(
+                R.styleable.DashboardLegendView_icon,
+                R.drawable.ic_launcher_background
+            )
 
         if (Build.VERSION.SDK_INT >= 21) {
             dashboardLegendIcon.setImageDrawable(attributes.getDrawable(R.styleable.DashboardLegendView_icon))
@@ -49,15 +53,16 @@ class DashboardLegendView(context: Context, attrs: AttributeSet)  : ConstraintLa
         dashboardLegendTitle.text = attributes.getString(R.styleable.DashboardLegendView_title)
         dashboardLegendSubTitle.apply {
             text = String.format(
-                context.getString(R.string.ahir),
+                context.getString(R.string.app_name),
                 attributes.getString(R.styleable.DashboardLegendView_subTitle)
             )
             visibility = if (text != "( null )") {
-                View.VISIBLE
+                //View.VISIBLE
+                View.GONE
             } else {
                 View.GONE
             }
         }
         attributes.recycle()
-    }*/
+    }
 }

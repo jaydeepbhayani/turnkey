@@ -30,7 +30,7 @@ class CategoryAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         val itemView =
             LayoutInflater.from(parent.context)
-                .inflate(R.layout.item_category, parent, false)
+                .inflate(R.layout.item_whats_popular_furniture, parent, false)
         return CategoryViewHolder(itemView)
     }
 

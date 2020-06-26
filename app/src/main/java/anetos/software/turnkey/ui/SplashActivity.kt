@@ -7,10 +7,9 @@ import android.os.Bundle
 import android.os.Handler
 import android.view.WindowManager
 import android.view.animation.Animation
-import android.view.animation.AnimationUtils
 import anetos.software.turnkey.R
 import anetos.software.turnkey.core.BaseActivity
-import kotlinx.android.synthetic.main.activity_splash.*
+import anetos.software.turnkey.ui.home.MainActivity
 
 
 class SplashActivity : BaseActivity() {

@@ -8,5 +8,19 @@
     <string name="menu_curtains">Curtains</string>
     <string name="menu_lights">Lights</string>
     <string name="menu_alluminium_windows">Alluminium Windows</string>
-
+    <string name="str_furniture">Furniture</string>
+    <string name="str_living">Living</string>
+    <string name="str_bedroom">Bedroom</string>
+    <string name="str_kids_room">Kids Room</string>
+    <string name="str_mattresses">Matteress</string>
+    <string name="str_furnishings">Furnishings</string>
+    <string name="str_decor">Decor</string>
+    <string name="str_lightning">Lightning</string>
+    <string name="str_gifting">Gifting</string>
+    <string name="app_modular_furniture">Modular \nFurniture</string>
+    <string name="whats_popular_in_furninture">Whats popular in furninture</string>
+    <string name="shop_by_style">Shop by style</string>
+    <string name="most_popular_brands">Most popular brands</string>
+    <string name="rupee">\u20B9</string>
+    <string name="rs">\u20A8</string>
 </resources>

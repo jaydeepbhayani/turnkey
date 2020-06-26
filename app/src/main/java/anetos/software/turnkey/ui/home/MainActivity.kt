@@ -1,18 +1,18 @@
-package anetos.software.turnkey.ui
+package anetos.software.turnkey.ui.home
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.LinearLayout
-import androidx.recyclerview.widget.DividerItemDecoration
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import anetos.software.turnkey.R
+import anetos.software.turnkey.core.setup
 import anetos.software.turnkey.data.model.BusinessDirectory
 import anetos.software.turnkey.data.model.NaviMenuItem
 import anetos.software.turnkey.ui.common.CategoryAdapter
-import com.google.gson.Gson
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.item_shop_by_style.view.*
+import kotlinx.android.synthetic.main.layout_most_popular_brands.*
+import kotlinx.android.synthetic.main.layout_shop_by_style.*
+import kotlinx.android.synthetic.main.layout_whats_popular_furniture.*
 
 /**
  *  created by jaydeepbhayani on 19/06/2020
@@ -52,11 +52,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         setAdapter()
+        setShopByStyleAdapter()
+        setPopularBrandAdapter()
     }
 
     private fun setAdapter() {
         categoryAdapter = CategoryAdapter()
-        rvCategory.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)
+        rvCategory.layoutManager = LinearLayoutManager(this, RecyclerView.HORIZONTAL, false)
         rvCategory.adapter = categoryAdapter
         rvCategory.isNestedScrollingEnabled = false
         /*rvCategory.addItemDecoration(
@@ -83,4 +85,27 @@ class MainActivity : AppCompatActivity() {
         categoryAdapter.setData(this, categoryItemList)
     }
 
+    fun setShopByStyleAdapter() {
+        rvShopByStyle.setup(
+            categoryItemList, R.layout.item_shop_by_style, { info ->
+                ivPhoto.setImageResource(info.icon)
+
+            },
+            {
+                android.util.Log.d("rvHeader", "onClick")
+            }, LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+        )
+    }
+
+    fun setPopularBrandAdapter() {
+        rvPopularBrands.setup(
+            categoryItemList, R.layout.item_most_popular_brands, { info ->
+                ivPhoto.setImageResource(info.icon)
+
+            },
+            {
+                android.util.Log.d("rvHeader", "onClick")
+            }, LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+        )
+    }
 }

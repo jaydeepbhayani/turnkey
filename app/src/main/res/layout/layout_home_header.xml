@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?><!--<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent">-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="horizontal"
+        tools:context=".ui.home.HomeFragment">
+
+        <anetos.software.turnkey.ui.common.views.DashboardLegendView
+            android:id="@+id/furniture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            app:icon="@drawable/ic_sofa"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:subTitle="@string/app_name"
+            app:title="@string/str_furniture" />
+
+        <anetos.software.turnkey.ui.common.views.DashboardLegendView
+            android:id="@+id/living"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            app:icon="@drawable/ic_window"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:subTitle="@string/app_name"
+            app:title="@string/str_living" />
+
+        <anetos.software.turnkey.ui.common.views.DashboardLegendView
+            android:id="@+id/bedroom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            app:icon="@drawable/ic_bedroom"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:subTitle="@string/app_name"
+            app:title="@string/str_bedroom" />
+
+        <anetos.software.turnkey.ui.common.views.DashboardLegendView
+            android:id="@+id/kidsroom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            app:icon="@drawable/ic_room"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:subTitle="@string/app_name"
+            app:title="@string/str_kids_room" />
+
+        <anetos.software.turnkey.ui.common.views.DashboardLegendView
+            android:id="@+id/mattresses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            app:icon="@drawable/ic_mattress"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:subTitle="@string/app_name"
+            app:title="@string/str_mattresses" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <anetos.software.turnkey.ui.common.views.DashboardLegendView
+            android:id="@+id/furnishings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            app:icon="@drawable/ic_furniture"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:subTitle="@string/app_name"
+            app:title="@string/str_furnishings" />
+
+        <anetos.software.turnkey.ui.common.views.DashboardLegendView
+            android:id="@+id/decor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            app:icon="@drawable/ic_vase"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:subTitle="@string/app_name"
+            app:title="@string/str_decor" />
+
+        <anetos.software.turnkey.ui.common.views.DashboardLegendView
+            android:id="@+id/magazine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            app:icon="@drawable/ic_light_bulb"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:subTitle="@string/app_name"
+            app:title="@string/str_lightning" />
+
+        <anetos.software.turnkey.ui.common.views.DashboardLegendView
+            android:id="@+id/gifting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            app:icon="@drawable/ic_gift_box"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:subTitle="@string/app_name"
+            app:title="@string/str_gifting" />
+
+        <anetos.software.turnkey.ui.common.views.DashboardLegendView
+            android:id="@+id/modularFurniture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            app:icon="@drawable/ic_furniture"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:title="@string/app_modular_furniture" />
+
+    </LinearLayout>
+</LinearLayout><!--
+</HorizontalScrollView>-->

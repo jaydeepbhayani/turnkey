@@ -16,7 +16,7 @@ import java.util.*
 
 
 /***
- *  created by jaydeepbhayani on 05/05/2020
+ *  created by jaydeepbhayani on 19/06/2020
  */
 class StringPickerDialog : DialogFragment() {
     private val items: MutableList<String> =

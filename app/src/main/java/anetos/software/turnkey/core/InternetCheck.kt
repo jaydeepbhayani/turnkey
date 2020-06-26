@@ -7,7 +7,7 @@ import java.net.Socket
 
 
 /***
- *  created by jaydeepbhayani on 21/04/2020
+ *  created by jaydeepbhayani on 19/06/2020
  */
 class InternetCheck(private val onInternetChecked: (Boolean) -> Unit) :
     AsyncTask<Void, Void, Boolean>() {

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DashboardLegendView">
+        <attr name="icon" format="reference" />
+        <attr name="title" format="string" />
+        <attr name="subTitle" format="string" />
+        <attr name="subTitleVisibility" format="integer" />
+        <attr name="iconVisibility" format="integer" />
+    </declare-styleable>
+</resources>
